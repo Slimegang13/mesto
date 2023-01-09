@@ -1,0 +1,31 @@
+.profile__add {
+    margin: 0;
+    margin-top: 35px;
+    margin-left: auto;
+    height: 50px;
+    width: 150px;
+    border-radius: 2px;
+    background-color: black;
+    border: 1px solid white;
+    background-image: url('../../../images/Vector\ \(12\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.profile__add:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width:690px) {
+    .profile__add {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .profile__add {
+        height: 50px;
+        width: 282px;
+    }
+}

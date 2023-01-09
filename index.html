@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <a class="popup">
+        <div class="popup__container">
+            <img src="images/Close-Icon.png" alt="Закрытие окна" class="popup__close">
+            <p class="popup__red">Редактировать профиль</p>
+            <form action="" class="popup__form">
+                <input type="text" class="popup__input popup__input_name" placeholder="Жак-Ив Кусто">
+                <input type="text" class="popup__input popup__input_bio" placeholder="Исследователь океана">
+                <button class="popup__button">Сохранить</button>
+            </form>
+        </div>
+    </a>
+
+    <div class="page">
+
+        <header class="header">
+            <img src="images/logo.svg" alt="Лого сайта" class="header__logo">
+        </header>
+
+        <main>
+            <section class="profile">
+                <img src="images/Avatar.png" alt="Фото профиля" class="profile__image">
+                <div class="profile__info">
+                    <div class="profile__info-edit">
+                        <p class="profile__name">Жак-Ив Кусто</p>
+                        <button class="profile__edit"></button>
+                    </div>
+                    <p class="profile__bio">Исследователь океана</p>
+                </div>
+
+                <button class="profile__add"></button>
+            </section>
+
+            <section class="elements">
+                <div class="elements__block">
+                    <div class="elements__info">
+                        <p class="elements__pic-name">Japan</p>
+                        <img src="images/Group (2).svg" alt="Кнопка лайка" class="elements__like">
+                    </div>
+                    <img class="elements__pic" src="images/neon.jpg" alt="Фото профиля">
+                </div>
+                <div class="elements__block">
+                    <div class="elements__info">
+
+                        <p class="elements__pic-name">Небо</p>
+                        <img src="images/Group (2).svg" alt="Кнопка лайка" class="elements__like">
+                    </div>
+                    <img class="elements__pic" src="images/road.jpg" alt="Фото профиля">
+                </div>
+                <div class="elements__block">
+                    <div class="elements__info">
+
+                        <p class="elements__pic-name">?</p>
+                        <img src="images/Group (2).svg" alt="Кнопка лайка" class="elements__like">
+                    </div>
+                    <img class="elements__pic" src="images/girl.jpg" alt="Фото профиля">
+                </div>
+                <div class="elements__block">
+                    <div class="elements__info">
+
+                        <p class="elements__pic-name">pic 4</p>
+                        <img src="images/Group (2).svg" alt="Кнопка лайка" class="elements__like">
+                    </div>
+                    <img class="elements__pic" src="images/4c3e85210b0a7b0f9bf687ed4199bb1e.jpg" alt="Фото профиля">
+                </div>
+                <div class="elements__block">
+                    <div class="elements__info">
+
+                        <p class="elements__pic-name">Домбай</p>
+                        <img src="images/Group (2).svg" alt="Кнопка лайка" class="elements__like">
+                    </div>
+                    <img class="elements__pic"
+                        src="https://drscdn.500px.org/photo/109102047/q%3D80_m%3D2000/v2?sig=0d2e79e792c20dc80dbbf01e0cee4050b03a69d4f3ac3fc199cc18b44f0f4315"
+                        alt="Фото профиля">
+                </div>
+                <div class="elements__block">
+                    <div class="elements__info">
+
+                        <p class="elements__pic-name">Карачаево</p>
+                        <img src="images/Group (2).svg" alt="Кнопка лайка" class="elements__like">
+                    </div>
+                    <img class="elements__pic" src="images/1823848e86a4b578e337315043c018b3.jpg" alt="Фото профиля">
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p class="footer__copyright">© 2020 Mesto Russia</p>
+
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
