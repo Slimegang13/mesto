@@ -1,5 +1,5 @@
 <p align="center">
-    <img  src="mesto-logo.png" alt="Лого сайта">
+    <img  src="images/mesto-logo.png" alt="Лого сайта">
 </p>
 <h1 align="center">Проект: Mesto</h1>
 

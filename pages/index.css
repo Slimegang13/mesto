@@ -1,3 +1,6 @@
+/* FONTS */
+@import url('../vendor/fonts/fonts.css');
+
 /* MAIN */
 @import url('../vendor/normalize.css');
 @import url('../blocks/page/page.css');
@@ -12,6 +15,7 @@
 @import url('../blocks/profile/__add/profile__add.css');
 @import url('../blocks/profile/__bio/profile__bio.css');
 @import url('../blocks/profile/__edit/profile__edit.css');
+@import url('../blocks/profile/__info/profile__info.css');
 @import url('../blocks/profile/__info-edit/profile__info-edit.css');
 @import url('../blocks/profile/__image/profile__image.css');
 @import url('../blocks/profile/__name/profile__name.css');
