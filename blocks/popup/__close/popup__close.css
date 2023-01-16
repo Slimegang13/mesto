@@ -8,3 +8,11 @@
 .popup__close:hover {
     opacity: 0.6;
 }
+
+@media screen and (max-width:522px) {
+    .popup__close {
+        width: 20px;
+        height: 20px;
+        right: 0;
+    }
+}

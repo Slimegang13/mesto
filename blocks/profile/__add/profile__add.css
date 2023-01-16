@@ -5,8 +5,8 @@
     height: 50px;
     width: 150px;
     border-radius: 2px;
-    background-color: black;
-    border: 1px solid white;
+    background-color: transparent;
+    border: 2px solid white;
     background-image: url('../../../images/Vector\ \(12\).png');
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,6 @@
 
 @media screen and (max-width:400px) {
     .profile__add {
-        height: 50px;
         width: 282px;
     }
 }

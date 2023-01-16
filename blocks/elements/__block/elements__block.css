@@ -1,4 +1,6 @@
 .elements__block {
-    position: relative;
-    height: 361px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
 }
