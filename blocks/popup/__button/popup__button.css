@@ -11,6 +11,7 @@
     font-weight: 400;
     line-height: 22px;
     cursor: pointer;
+    border: none;
 }
 
 .popup__button:hover {
@@ -21,7 +22,8 @@
 @media screen and (max-width:470px) {
     .popup__button {
         width: 255px;
-
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -31,5 +33,7 @@
         margin-left: 22px;
         margin-top: 45px;
         margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 17px;
     }
 }

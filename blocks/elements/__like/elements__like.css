@@ -1,6 +1,17 @@
 .elements__like {
     margin-right: 20px;
+    margin-top: 5px;
+    width: 22px;
+    height: 19px;
     cursor: pointer;
+    background-image: url('../../../images/like.svg');
+    border: none;
+    background-color: transparent;
+    background-position: center;
 }
 
 .elements__like:active {}
+
+.elements__like:hover {
+    opacity: 0.5;
+}

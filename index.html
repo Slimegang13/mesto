@@ -12,12 +12,13 @@
 <body class="body">
     <div class="popup">
         <div class="popup__container">
-            <img src="images/Close-Icon.png" alt="Закрытие окна" class="popup__close">
-            <p class="popup__red">Редактировать профиль</p>
-            <form action="form.php" class="popup__form">
-                <input type="text" class="popup__input popup__input_name" placeholder="Жак-Ив Кусто">
-                <input type="text" class="popup__input popup__input_bio" placeholder="Исследователь океана">
-                <button class="popup__button">Сохранить</button>
+            <button type="button" class="popup__close"></button>
+            <h2 class="popup__red">Редактировать профиль</h2>
+            <form action="form.php" class="popup__form" name="userform">
+                <input name="name" type="text" class="popup__input popup__input_type_name" placeholder="Жак-Ив Кусто">
+                <input name="bio" type="text" class="popup__input popup__input_type_bio"
+                    placeholder="Исследователь океана">
+                <button type="submit" class="popup__button">Сохранить</button>
             </form>
         </div>
     </div>
@@ -33,58 +34,64 @@
                 <img src="images/Avatar.png" alt="Фото профиля" class="profile__image">
                 <div class="profile__info">
                     <div class="profile__info-edit">
-                        <p class="profile__name">Жак-Ив Кусто</p>
-                        <button class="profile__edit"></button>
+                        <h2 class="profile__name">Жак-Ив Кусто</h2>
+                        <button type="button" class="profile__edit"></button>
                     </div>
                     <p class="profile__bio">Исследователь океана</p>
                 </div>
-                <button class="profile__add"></button>
+                <button type="button" class="profile__add"></button>
             </section>
 
             <section class="elements">
                 <div class="elements__block">
-                    <div class="elements__info">
-                        <p class="elements__pic-name">Japan</p>
-                        <img src="images/like.svg" alt="Кнопка лайка" class="elements__like">
-                    </div>
                     <img class="elements__pic" src="images/neon.jpg" alt="Фото в профиле">
+                    <div class="elements__info">
+                        <h3 class="elements__pic-name">Japan</h3>
+                        <button type="button" class="elements__like"></button>
+                    </div>
+
                 </div>
                 <div class="elements__block">
-                    <div class="elements__info">
-                        <p class="elements__pic-name">Небо</p>
-                        <img src="images/like.svg" alt="Кнопка лайка" class="elements__like">
-                    </div>
                     <img class="elements__pic" src="images/road.jpg" alt="Фото в профиле">
+                    <div class="elements__info">
+                        <h3 class="elements__pic-name">Небо</h3>
+                        <button type="button" class="elements__like"></button>
+                    </div>
+
                 </div>
                 <div class="elements__block">
-                    <div class="elements__info">
-                        <p class="elements__pic-name">?</p>
-                        <img src="images/like.svg" alt="Кнопка лайка" class="elements__like">
-                    </div>
                     <img class="elements__pic" src="images/girl.jpg" alt="Фото в профиле">
+                    <div class="elements__info">
+                        <h3 class="elements__pic-name">?</h3>
+                        <button type="button" class="elements__like"></button>
+                    </div>
+
                 </div>
                 <div class="elements__block">
-                    <div class="elements__info">
-                        <p class="elements__pic-name">pic 4</p>
-                        <img src="images/like.svg" alt="Кнопка лайка" class="elements__like">
-                    </div>
                     <img class="elements__pic" src="images/4c3e85210b0a7b0f9bf687ed4199bb1e.jpg" alt="Фото в профиле">
+                    <div class="elements__info">
+                        <h3 class="elements__pic-name">pic 4</h3>
+                        <button type="button" class="elements__like"></button>
+                    </div>
+
                 </div>
                 <div class="elements__block">
-                    <div class="elements__info">
-                        <p class="elements__pic-name">Домбай</p>
-                        <img src="images/like.svg" alt="Кнопка лайка" class="elements__like">
-                    </div>
                     <img class="elements__pic"
                         src="https://drscdn.500px.org/photo/109102047/q%3D80_m%3D2000/v2?sig=0d2e79e792c20dc80dbbf01e0cee4050b03a69d4f3ac3fc199cc18b44f0f4315"
                         alt="Фото в профиле">
+                    <div class="elements__info">
+                        <h3 class="elements__pic-name">Домбай</h3>
+                        <button type="button" class="elements__like"></button>
+                    </div>
+
                 </div>
                 <div class="elements__block">
-                    <div class="elements__info">
-                        <p class="elements__pic-name">Карачаево-тест123</p>
-                        <img src="images/like.svg" alt="Кнопка лайка" class="elements__like">
-                    </div>
                     <img class="elements__pic" src="images/1823848e86a4b578e337315043c018b3.jpg" alt="Фото в профиле">
+                    <div class="elements__info">
+                        <h3 class="elements__pic-name">Карачаево-тест123</h3>
+                        <button type="button" class="elements__like"></button>
+                    </div>
+
                 </div>
             </section>
         </main>
@@ -94,7 +101,7 @@
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
     </div>
-    <script src="index.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

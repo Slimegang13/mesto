@@ -1,11 +1,10 @@
 .elements__info {
-    position: absolute;
+    box-sizing: border-box;
     background-color: white;
-    min-height: 79px;
     max-width: 282px;
     width: 100%;
-    bottom: 0;
-    z-index: 10;
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 31px;
 }

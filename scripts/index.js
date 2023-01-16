@@ -4,8 +4,8 @@ let popupClose = document.querySelector('.popup__close');
 let popupSave = document.querySelector('.popup__button');
 let profileName = document.querySelector('.profile__name');
 let profileBio = document.querySelector('.profile__bio');
-let inputName = document.querySelector('.popup__input_name');
-let inputBio = document.querySelector('.popup__input_bio');
+let inputName = document.querySelector('.popup__input_type_name');
+let inputBio = document.querySelector('.popup__input_type_bio');
 let formElement = document.querySelector('.popup__form');
 
 
