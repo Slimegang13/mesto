@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesto</title>
     <link rel="stylesheet" href="pages/index.css">
+
 </head>
 
 <body class="body">
-    <div class="popup">
+    <div class="popup popup_type_photo">
+        <div class="popup__pic-container">
+            <button type="button" class="popup__close"></button>
+            <img src="#" alt="#" class="popup__photo-image">
+           <h3 class="popup__pic-name"></h3>
+        </div>
+    </div>
+
+    <div class="popup popup_type_main">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
             <h2 class="popup__red">Редактировать профиль</h2>
@@ -22,6 +31,23 @@
             </form>
         </div>
     </div>
+
+
+
+    <div class="popup popup_type_addpic">
+        <div class="popup__addpic-container">
+            <button type="button" class="popup__close"></button>
+            <h2 class="popup__red">Новое место</h2>
+            <form action="form.php" class="popup__addpic-form" name="addpic">
+                <input name="postName" type="text" class="popup__addpic-input popup__addpic-inputname"
+                    placeholder="Название">
+                <input name="imgLink" type="text" class="popup__addpic-input popup__addpic-inputlink"
+                    placeholder="Ссылка на картинку">
+                <button type="submit" class="popup__addpic-button">Создать</button>
+            </form>
+        </div>
+    </div>
+
 
     <div class="page">
 
@@ -43,56 +69,16 @@
             </section>
 
             <section class="elements">
+             <template id ="card">
                 <div class="elements__block">
+                    <button type="button" class="elements__delete-icon"></button>
                     <img class="elements__pic" src="images/neon.jpg" alt="Фото в профиле">
                     <div class="elements__info">
                         <h2 class="elements__pic-name">Japan</h2>
                         <button type="button" class="elements__like"></button>
                     </div>
-
                 </div>
-                <div class="elements__block">
-                    <img class="elements__pic" src="images/road.jpg" alt="Фото в профиле">
-                    <div class="elements__info">
-                        <h2 class="elements__pic-name">Небо</h2>
-                        <button type="button" class="elements__like"></button>
-                    </div>
-
-                </div>
-                <div class="elements__block">
-                    <img class="elements__pic" src="images/girl.jpg" alt="Фото в профиле">
-                    <div class="elements__info">
-                        <h2 class="elements__pic-name">?</h2>
-                        <button type="button" class="elements__like"></button>
-                    </div>
-
-                </div>
-                <div class="elements__block">
-                    <img class="elements__pic" src="images/4c3e85210b0a7b0f9bf687ed4199bb1e.jpg" alt="Фото в профиле">
-                    <div class="elements__info">
-                        <h2 class="elements__pic-name">pic 4</h2>
-                        <button type="button" class="elements__like"></button>
-                    </div>
-
-                </div>
-                <div class="elements__block">
-                    <img class="elements__pic"
-                        src="https://drscdn.500px.org/photo/109102047/q%3D80_m%3D2000/v2?sig=0d2e79e792c20dc80dbbf01e0cee4050b03a69d4f3ac3fc199cc18b44f0f4315"
-                        alt="Фото в профиле">
-                    <div class="elements__info">
-                        <h2 class="elements__pic-name">Домбай</h2>
-                        <button type="button" class="elements__like"></button>
-                    </div>
-
-                </div>
-                <div class="elements__block">
-                    <img class="elements__pic" src="images/1823848e86a4b578e337315043c018b3.jpg" alt="Фото в профиле">
-                    <div class="elements__info">
-                        <h2 class="elements__pic-name">Карачаево-тест123</h2>
-                        <button type="button" class="elements__like"></button>
-                    </div>
-
-                </div>
+            </template>
             </section>
         </main>
 

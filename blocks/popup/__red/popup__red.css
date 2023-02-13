@@ -6,7 +6,7 @@
     line-height: 29px;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:522px) {
     .popup__red {
         max-width: 238px;
         width: 100%;

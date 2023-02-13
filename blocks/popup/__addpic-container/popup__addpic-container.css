@@ -1,0 +1,15 @@
+.popup__addpic-container {
+    position: relative;
+    box-sizing: border-box;
+    background-color: white;
+    width: 430px;
+    z-index: 1012;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:522px) {
+    .popup__addpic-container {
+        width: 282px;
+    }
+
+}
