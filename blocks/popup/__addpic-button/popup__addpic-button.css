@@ -1,6 +1,7 @@
 .popup__addpic-button {
     background-color: black;
     color: white;
+    cursor: pointer;
     border: none;
     height: 50px;
     width: 358px;
@@ -9,6 +10,10 @@
     line-height: 22px;
     border-radius: 2px;
     margin: 48px 36px 36px 36px;
+}
+
+.popup__addpic-button:hover {
+    opacity: 0.8;
 }
 
 @media screen and (max-width:522px) {

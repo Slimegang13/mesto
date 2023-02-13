@@ -10,6 +10,7 @@ const inputBio = document.querySelector('.popup__input_type_bio');
 const formElement = document.querySelector('.popup__form');
 const elements = document.querySelector('.elements');
 const popupPhoto = document.querySelector('.popup_type_photo');
+const addPictureButton = document.querySelector('.profile__add');
 const popupAddPic = document.querySelector('.popup_type_addpic');
 const popupAddPicForm = document.querySelector('.popup__addpic-form')
 const popupAddPicInputName = document.querySelector('.popup__addpic-inputname');
@@ -17,7 +18,6 @@ const popupAddPicInputLink = document.querySelector('.popup__addpic-inputlink');
 const card = document.querySelector('#card').content;
 const cardName = document.querySelector('.popup__pic-name');
 const cardImg = document.querySelector('.popup__photo-image');
-const addPictureButton = document.querySelector('.profile__add');
 const initialCards = [
     {
         name: 'Архыз',
