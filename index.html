@@ -1,93 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
 
-</head>
-
-<body class="body">
+  <body class="body">
     <div class="popup popup_type_photo">
-        <div class="popup__pic-container">
-            <button type="button" class="popup__close"></button>
-            <img src="#" alt="#" class="popup__photo-image">
-           <h3 class="popup__pic-name"></h3>
-        </div>
+      <div class="popup__pic-container">
+        <button type="button" class="popup__close"></button>
+        <img src="#" alt="#" class="popup__photo-image" />
+        <h3 class="popup__pic-name"></h3>
+      </div>
     </div>
 
     <div class="popup popup_type_main">
-        <div class="popup__container">
-            <button type="button" class="popup__close"></button>
-            <h2 class="popup__red">Редактировать профиль</h2>
-            <form action="form.php" class="popup__form" name="userform">
-                <input name="name" type="text" class="popup__input popup__input_type_name" placeholder="Жак-Ив Кусто">
-                <input name="bio" type="text" class="popup__input popup__input_type_bio"
-                    placeholder="Исследователь океана">
-                <button type="submit" class="popup__button">Сохранить</button>
-            </form>
-        </div>
+      <div class="popup__container">
+        <button type="button" class="popup__close"></button>
+        <h2 class="popup__red">Редактировать профиль</h2>
+        <form action="form.php" class="popup__form" name="userform">
+          <input
+            name="name"
+            type="text"
+            class="popup__input popup__input_type_name"
+            placeholder="Жак-Ив Кусто"
+          />
+          <input
+            name="bio"
+            type="text"
+            class="popup__input popup__input_type_bio"
+            placeholder="Исследователь океана"
+          />
+          <button type="submit" class="popup__button">Сохранить</button>
+        </form>
+      </div>
     </div>
-
-
 
     <div class="popup popup_type_addpic">
-        <div class="popup__addpic-container">
-            <button type="button" class="popup__close"></button>
-            <h2 class="popup__red">Новое место</h2>
-            <form action="form.php" class="popup__addpic-form" name="addpic">
-                <input name="postName" type="text" class="popup__addpic-input popup__addpic-inputname"
-                    placeholder="Название">
-                <input name="imgLink" type="text" class="popup__addpic-input popup__addpic-inputlink"
-                    placeholder="Ссылка на картинку">
-                <button type="submit" class="popup__addpic-button">Сохранить</button>
-            </form>
-        </div>
+      <div class="popup__addpic-container">
+        <button type="button" class="popup__close"></button>
+        <h2 class="popup__red">Новое место</h2>
+        <form action="form.php" class="popup__addpic-form" name="addpic">
+          <input
+            name="postName"
+            type="text"
+            class="popup__addpic-input popup__addpic-inputname"
+            placeholder="Название"
+          />
+          <input
+            name="imgLink"
+            type="text"
+            class="popup__addpic-input popup__addpic-inputlink"
+            placeholder="Ссылка на картинку"
+          />
+          <button type="submit" class="popup__addpic-button">Сохранить</button>
+        </form>
+      </div>
     </div>
-
 
     <div class="page">
+      <header class="header">
+        <img src="images/logo.svg" alt="Лого сайта" class="header__logo" />
+      </header>
 
-        <header class="header">
-            <img src="images/logo.svg" alt="Лого сайта" class="header__logo">
-        </header>
+      <main>
+        <section class="profile">
+          <img
+            src="images/Avatar.png"
+            alt="Фото профиля"
+            class="profile__image"
+          />
+          <div class="profile__info">
+            <div class="profile__info-edit">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button type="button" class="profile__edit"></button>
+            </div>
+            <p class="profile__bio">Исследователь океана</p>
+          </div>
+          <button type="button" class="profile__add"></button>
+        </section>
 
-        <main>
-            <section class="profile">
-                <img src="images/Avatar.png" alt="Фото профиля" class="profile__image">
-                <div class="profile__info">
-                    <div class="profile__info-edit">
-                        <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <button type="button" class="profile__edit"></button>
-                    </div>
-                    <p class="profile__bio">Исследователь океана</p>
-                </div>
-                <button type="button" class="profile__add"></button>
-            </section>
+        <section class="elements">
+          <template id="card">
+            <div class="elements__block">
+              <button type="button" class="elements__delete-icon"></button>
+              <img
+                class="elements__pic"
+                src="images/neon.jpg"
+                alt="Фото в профиле"
+              />
+              <div class="elements__info">
+                <h2 class="elements__pic-name">Japan</h2>
+                <button type="button" class="elements__like"></button>
+              </div>
+            </div>
+          </template>
+        </section>
+      </main>
 
-            <section class="elements">
-             <template id ="card">
-                <div class="elements__block">
-                    <button type="button" class="elements__delete-icon"></button>
-                    <img class="elements__pic" src="images/neon.jpg" alt="Фото в профиле">
-                    <div class="elements__info">
-                        <h2 class="elements__pic-name">Japan</h2>
-                        <button type="button" class="elements__like"></button>
-                    </div>
-                </div>
-            </template>
-            </section>
-        </main>
-
-
-        <footer class="footer">
-            <p class="footer__copyright">© 2020 Mesto Russia</p>
-        </footer>
+      <footer class="footer">
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
+      </footer>
     </div>
+    <script src="scripts/card.js"></script>
     <script src="scripts/index.js"></script>
-</body>
-
+  </body>
 </html>
