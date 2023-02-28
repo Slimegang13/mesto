@@ -5,17 +5,13 @@
     width: 430px;
     z-index: 101;
     border-radius: 10px;
+    padding-left:36px;
 }
 
 @media screen and (max-width:470px) {
     .popup__container {
-        width: 310px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .popup__container {
         width: 282px;
-
+        padding-left:22px;
     }
 }
+
