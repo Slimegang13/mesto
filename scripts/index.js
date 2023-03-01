@@ -66,28 +66,12 @@ function deleteCard(event) {
 function openPopup(element) {
   element.classList.add("popup_opened");
   document.addEventListener("keydown", closeOnEscape);
-  const errors = element.querySelectorAll(".popup__input-error");
-  hideErrors(element);
-}
-
-function hideErrors(element) {
-  const errors = element.querySelectorAll(".popup__input-error");
-  const inputs = element.querySelectorAll(".popup__input");
-  errors.forEach((error) => {
-    error.textContent = "";
-  });
-  inputs.forEach((input) => {
-    input.classList.remove("popup__input_type_error");
-  });
 }
 
 function closeOnEscape(event) {
   if (event.key === "Escape") {
-    popups.forEach((popup) => {
-      if (popup.classList.contains("popup_opened")) {
-        closePopup(popup);
-      }
-    });
+    const openedPopup = document.querySelector(".popup_opened");
+    closePopup(openedPopup);
   }
 }
 
@@ -113,6 +97,8 @@ function handlerSubmitFormAddNewCard(event) {
   );
   closePopup(popupAddPic);
   popupAddPicForm.reset();
+  event.submitter.classList.add("popup__button_disable");
+  event.submitter.disabled = true;
 }
 
 function profileFormHandler(evt) {

@@ -16,7 +16,7 @@
     transition: all .3s ease-in;
 }
 
-.popup__button:hover {
+.popup__button:hover:enabled {
     background: rgba(0, 0, 0, 0.8);
     color:white;
 }
